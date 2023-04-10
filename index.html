@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/article.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
+
+    
+
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+
+            </div>
+            <ul class="menu">
+                <li><a href="">HOME</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">CONTACT</a></li>
+                <li><a href="">FEEDBACK</a></li>
+            </ul>
+            <div class="user">
+                <a href="user/user.html">
+                    Sign in/Sign up
+                </a>
+            </div>
+        </header>
+        <nav>
+            <ul class="list">
+                <li><a href="">Hot</a></li>
+                <li><a href="">New</a></li>
+                <li><a href="">Highlight</a></li>
+                <li><a href="">Sale</a></li>
+                <li><a href="">Deal</a></li>
+                <li><a href="">More</a></li>
+            </ul>
+            <div class="dark_mode">
+                <input type="checkbox" class="dn" id="dn" name="dark_mode" style="display: none;">
+                <label for="dn" class="toggle">
+                    <span class="toggle__handler">
+                    </span>
+                </label>
+            </div>
+            <!-- <div class="search_box">
+                <input type="text" placeholder="search your book">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div> -->
+            <form action="" class="search_box">
+                <input id="values-search" class="search-box" type="text" placeholder=" Search Your Book" required>
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+            <div id="values-item">
+                <table>
+                    <label>
+                        <i id="close" class='bx bx-x'></i>
+                        <input class="no" type="radio" id="check">
+                    </label>
+                    <thead>
+                        <tr>
+                            <th colspan="4" width="100%">Product</th>
+                        </tr>
+                    </thead>
+                    <tbody id="myTable">
+                        <tr>
+                            <td>
+                                <div class="poster">
+                                    <img src="images/product9.jpg" alt="">
+                                </div>
+                                <p>Attached</p>
+                                <span>$18.4</span>
+                            </td>
+                            <td>
+                                <div class="poster">
+                                    <img src="images/product2.jpg" alt="">
+                                </div>
+                                <p>Mindset</p>
+                                <span>$18.4</span>
+                            </td>
+                            <td>
+                                <div class="poster">
+                                    <img src="images/product3.jpg" alt="">
+                                </div>
+                                <p>Principles</p>
+                                <span>$18.4</span>
+                            </td>
+                            <td>
+                                <div class="poster">
+                                    <img src="images/product4.jpg" alt="">
+                                </div>
+                                <p>Sapiens</p>
+                                <span>$18.4</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="poster">
+                                    <img src="images/product5.jpg" alt="">
+                                </div>
+                                <p>The Psychology</p>
+                                <span>$18.4</span>
+                            </td>
+                            <td>
+                                <div class="poster">
+                                    <img src="images/product6.jpg" alt="">
+                                </div>
+                                <p>Atomic Habits</p>
+                                <span>$18.4</span>
+                            </td>
+                            <td>
+                                <div class="poster">
+                                    <img src="images/product7.jpg" alt="">
+                                </div>
+                                <p>Deep Work</p>
+                                <span>$18.4</span>
+                            </td>
+                            <td>
+                                <div class="poster">
+                                    <img src="images/product8.jpg" alt="">
+                                </div>
+                                <p>Essentialism</p>
+                                <span>$18.4</span>
+                            </td>
+                        </tr>
+
+
+                    </tbody>
+                </table>
+            </div>
+        </nav>
+        <article>
+            <h3
+                style="color: #fff;text-shadow: 1px 1px 1p red;font-size: 30px;margin-top: 60px;width: 100%;display: flex;justify-content: center;">
+                -50%</h3>
+            <div class="coundown">
+                <div class="time">
+                    <div class="box">
+                        <div id="hours">12</div>
+                        Hours
+                    </div>
+                    <div style="display:flex;align-items: center;height:
+                            50px;;font-size: 20px;color: #fff;font-weight:
+                            bold;">
+                        :
+                    </div>
+                    <div class="box">
+                        <div id="minutes">30</div>
+                        Minutes
+                    </div>
+                    <div style="display:flex;align-items: center;height:
+                            50px;;font-size: 20px;color: #fff;font-weight:
+                            bold;">
+                        :
+                    </div>
+                    <div class="box">
+                        <div id="seconds">12</div>
+                        Seconds
+                    </div>
+                </div>
+            </div>
+            <div class="slide-show">
+                <div id="slide">
+                    <div id="item" class="item" style="background-image:
+                            url(images/item1.jpg);">
+
+                    </div>
+                    <div class="item" style="background-image:
+                            url(images/item2.jpg);">
+
+                    </div>
+                    <div class="item" style="background-image:
+                            url(images/item3.jpg);">
+
+                    </div>
+                    <div class="item" style="background-image:
+                            url(images/item4.jpg);">
+
+                    </div>
+                    <div class="item" style="background-image:
+                            url(images/item5.jpg);">
+
+                    </div>
+                    <div class="item" style="background-image:
+                            url(images/item6.jpg);">
+
+                    </div>
+                    <div class="item" style="background-image:
+                            url(images/item7.jpg);">
+
+                    </div>
+
+                </div>
+                <p class="note">'The book is a window to the world</p>
+                <div class="control_slide_show">
+                    <button id="prev"><i class="fa-solid fa-angles-left"></i></button>
+                    <button id="next"><i class="fa-solid fa-angles-right"></i></button>
+                </div>
+            </div>
+
+            <div class="list_product">
+                <div class="product" align="center">
+                    <img src="images/product1.jpg" alt="">
+                    <div class="textBox">
+                        <p class="text head">Man’s Search For Meaning</p>
+                        <span>Viktor Frankl</span>
+                        <p class="text price">$18.4</p>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="images/product2.jpg" alt="">
+                    <div class="textBox">
+                        <p class="text head"> Mindset</p>
+                        <span>Carol Dweck</span>
+                        <p class="text price">$18.4</p>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="images/product3.jpg" alt="">
+                    <div class="textBox">
+                        <p class="text head">Principles</p>
+                        <span>Ray Dalio</span>
+                        <p class="text price">$18.4</p>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="images/product4.jpg" alt="">
+                    <div class="textBox">
+                        <p class="text head">Sapiens</p>
+                        <span>Yuval Noah Harari</span>
+                        <p class="text price">$18.4</p>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="images/product5.jpg" alt="">
+                    <div class="textBox">
+                        <p class="text head">The Psychology</p>
+                        <span>Money by Morgan Housel</span>
+                        <p class="text price">$18.4</p>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="images/product6.jpg" alt="">
+                    <div class="textBox">
+                        <p class="text head">Atomic Habits</p>
+                        <span>James Clear</span>
+                        <p class="text price">$18.4</p>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="images/product7.jpg" alt="">
+                    <div class="textBox">
+                        <p class="text head">Deep Work</p>
+                        <span>Cal Newport</span>
+                        <p class="text price">$18.4</p>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="images/product8.jpg" alt="">
+                    <div class="textBox">
+                        <p class="text head">Essentialism</p>
+                        <span>Greg McKeown</span>
+                        <p class="text price">$18.4</p>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="images/product9.jpg" alt="">
+                    <div class="textBox">
+                        <p class="text head"> Attached</p>
+                        <span>Rachel Heller and Amir Levine</span>
+                        <p class="text price">$18.4</p>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="images/product10.jpg" alt="">
+                    <div class="textBox">
+                        <p class="text head">The Power of Now</p>
+                        <span>Eckhart Tolle</span>
+                        <p class="text price">$18.4</p>
+                    </div>
+                </div>
+            </div>
+            <button id="backtop" style="background-color: transparent;font-size: xx-large;color: #fff;float: right;margin-right: 10px; border: none;"><i class='bx bx-chevrons-up'></i></button>
+        </article>
+        <footer>
+            <h2 align="center">Book Store ANV</h2>
+            <div class="contact">
+                <ul>
+                    <li>
+                        <a href="https://www.facebook.com/anv04/">
+                            <i class="fa-brands fa-facebook"></i>
+
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.tiktok.com/@nguyenan.anv">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </li>
+
+
+                </ul>
+            </div>
+            <div class="about">
+                <a href="">Terms of Use</a>
+                <a href="">Privacy Policy</a>
+                <a href="">Interest-Based Ads</a>
+                <a href="">License Agreement</a>
+                <a>©2023 ANV</a>
+            </div>
+        </footer>
+    </div>
+    <script>
+        // JQUERY
+        // back to top page
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop()) {
+                    $("#backtop").fadeIn();
+                } else {
+                    $("#backtop").fadeOut();
+                }
+            });
+            $("#backtop").click(function () {
+                $("html,body").animate(
+                    {
+                        scrollTop: 0,
+                    },
+                    1000
+                );
+            });
+        });
+        // search
+
+        $(document).ready(function () {
+            $("#values-search").on("keyup", function () {
+                var value = $(this).val().toLowerCase();
+                $("#myTable td").filter(function () {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });
+
+        let ok = document.querySelector('.no');
+        function hide() {
+            var checkBox = document.getElementById("check");
+            var table = document.getElementById("values-item");
+            if (checkBox.checked == true) {
+                table.style.display = "none";
+            }
+        }
+        ok.addEventListener("click", hide);
+        $(document).ready(function () {
+            $("#values-search").focus(function () {
+                $("#values-item").css("display", "block");
+            });
+        });
+
+    </script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

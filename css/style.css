@@ -1,0 +1,81 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+.container {
+    max-width: 1200px;
+    margin: auto;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(../images/backgroundjpg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+/* header */
+header {
+    width: 100%;
+    height: 80px;
+    background-color:rgba(236, 236, 236, 0.297);
+    padding: 5px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-image: url('../images/logo.png');
+    background-position: center;
+    background-size: 150%;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+}
+.menu li{
+    width: 120px;
+    text-align: center;
+    margin:0px 5px;
+    height: 50px;
+    line-height: 50px;
+    position: relative;
+}
+.menu li a{
+    color: #fff;
+    letter-spacing: 1.5px;
+}
+.menu li::after,
+.menu li::before{
+    content:'';
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+    position: absolute;
+    transition: 1s;
+}
+.menu li:before{
+    width: 0%;
+    left: 0;
+    top: 0;
+}
+.menu li:after{
+    width: 0%;
+    right: 0;
+    bottom: 0;
+}
+.menu li:hover::after,
+.menu li:hover::before{
+    width: 100%;
+}
+/* user */
+.user a{
+    font-size: 18px;
+    color: #fff;
+    text-decoration: underline;
+    font-weight:100;
+}

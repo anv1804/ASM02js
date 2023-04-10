@@ -1,0 +1,91 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+footer {
+    width: 100%;
+    
+}
+
+footer h2 {
+    line-height: 50px;
+    height: 50px;
+    color: #fff;
+  
+}
+
+.contact {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.contact ul {
+    display: flex;
+    list-style: none;
+}
+
+.contact ul li {
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    margin: 0px 5px;
+    transition: 0.7s;
+    background-color: transparent;
+}
+
+.contact ul li a {
+    color: #fff;
+    font-size: 30px;
+}
+
+.contact ul li:nth-child(1):hover {
+    background-color: blue;
+}
+
+.contact ul li:nth-child(2):hover {
+    background-color: black;
+    text-shadow: red -1.5px 0px, cyan 1.5px 0px;
+}
+
+.contact ul li:nth-child(4):hover {
+    background-color: black;
+}
+
+.contact ul li:nth-child(3):hover {
+    background-color: red;
+}
+
+.contact ul li:hover {
+    scale: 1.1;
+}
+
+.contact ul li:not(:hover) {
+    scale: 1;
+    opacity: 0.8;
+
+}
+
+.about {
+    height: 10%;
+    text-align: center;
+    backdrop-filter: blur(5px);
+    margin: auto;
+    padding: 5px 0;
+    margin-top: 15px;
+}
+
+.about a,
+p { 
+    padding: 5px 15px;
+    color: #fff;
+}
